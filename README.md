@@ -16,3 +16,13 @@
 -   git push -u origin main         	     <===  Push local code to the master branch of remote repository defined with origin (sent to Github)
   
   
+## TO UPDATE YOUR REPOSITORY WITH NEW VERSION OF README.md file updated locally
+
+> Here, we will update the README.md on our local repository and then push the new version to remote repo
+
+-   Do an update into README.md file with your prefered text editor.
+-   git add README.md             <===  Add a change in the working directory to the staging area  (locally)
+-   git commit -m "new update in README.md to be formatted as .md file"               <===  Capture a snapshot of the project's currently staged changes  (locally)
+-   git push          	          <===  Push local code to the master branch of remote repository defined with origin (sent to Github) 
+
+
