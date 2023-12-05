@@ -70,3 +70,14 @@
 -   git log --oneline --decorate
 
 ![Example screenshot](./img/sample_git_active_branch.png)
+
+
+##   UPDATE README.md FILE AND PUSH TO DEVELOP BRANCH
+
+-    git add -A         <===   Add ALL changes done in the working directory to the staging area  (locally)
+
+> As the current branch develop has no upstream branch, we need to setup it and push to remote in develop branch:
+
+-    git push --set-upstream origin develop           <===    Push the current branch and set the remote as upstream
+
+![Example screenshot](./img/sample_git_dev_branch.png)
