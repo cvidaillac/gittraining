@@ -109,3 +109,22 @@ In above example, we have 3 commits ahead in develop branch from main branch. Th
 
 ## GO TO MERGE ALL DEV DONE IN DEVELOP BRANCH TO MASTER BRANCH
 
+> Here we will merge all dev done in develop branch, referenced by "bc4db6b", to main branch.
+
+First we need to switch to main branch:
+
+-    git chekout master
+
+Second, launch the merge command by referencing the end point of the develop branch we want to merge => "bc4db6b"
+
+-    git merge bc4db6b
+
+![Example screenshot](./img/sample_git_merge.png)
+
+Then, check the status of 2 branches:
+
+-    git checkout develop               <===   Switch back to develop branch
+-    git log --oneline --decorate       <===   Then check with git log command
+
+![Example screenshot](./img/sample_git_merge_check.png)
+
