@@ -25,4 +25,5 @@
 -   git commit -m "new update in README.md to be formatted as .md file"               <===  Capture a snapshot of the project's currently staged changes  (locally)
 -   git push          	          <===  Push local code to the master branch of remote repository defined with origin (sent to Github) 
 
-
+## Screenshots
+![Example screenshot](./img/sample_update1.png)
