@@ -43,3 +43,30 @@
 -     git log --oneline --decorate
 
 ![Example screenshot](./img/sample_git_log_decorate.png)
+
+
+###   TO REMOVE A BRANCH
+
+> In case you need to remove a branch (locally and remotly)
+
+-   git branch -d develop               <===   Delete branch locally
+-   git push origin --delete develop    <===   Delete branch delete branch remotely
+
+
+###   LET'S CREATE A NEW BRANCH BASED ON MASTER AND UPDATE PROJECT INTO THIS NEW BRANCH
+
+> Here we will switch the develop branch to update project.
+
+##   SWITCH TO DEVELOP BRANCH
+
+-   git branch develop            <===   Switch to develop branch
+
+## Validate which branch I'm working on
+
+-   git log --oneline --decorate
+
+> Or to get more details, we can use the git log command:
+
+-   git log --oneline --decorate
+
+![Example screenshot](./img/sample_git_active_branch.png)
