@@ -59,7 +59,12 @@
 
 ##   SWITCH TO DEVELOP BRANCH
 
+> As we deleted the develop branch, we need to create again with following command.
 -   git branch develop            <===   Switch to develop branch
+
+> To switch to develop branch:
+
+-   git checkout develop
 
 ## Validate which branch I'm working on
 
