@@ -2,8 +2,15 @@
 
 > This is a step by step list of git commands to create and to update repository based on several cases.
 
-
-## TO CREATE A NEW REPOSITORY ON THE COMMAND LINE
+**Table of content:**
+ - [TO CREATE A NEW REPOSITORY ON THE COMMAND LINE](#item-one)
+ - [TO UPDATE YOUR REPOSITORY WITH NEW VERSION OF README.md FILE UPDATED LOCALLY](#item-two)
+ - [HOW TO MANAGE BRANCHES](#item-three)
+ - [MERGE ALL DEV DONE IN DEVELOP BRANCH TO MASTER BRANCH](#item-four)
+ 
+ 
+<a id="item-one"></a>
+### TO CREATE A NEW REPOSITORY ON THE COMMAND LINE
 
 > List of git commands to create a new repository from your git terminal:
 
@@ -15,8 +22,8 @@
 -   git remote add origin git@github.com:cvidaillac/gittraining.git          <===  Add a new remote repository defined with origin (locally)
 -   git push -u origin main         	     <===  Push local code to the master branch of remote repository defined with origin (sent to Github)
   
-  
-## TO UPDATE YOUR REPOSITORY WITH NEW VERSION OF README.md file updated locally
+<a id="item-two"></a>  
+### TO UPDATE YOUR REPOSITORY WITH NEW VERSION OF README.md FILE UPDATED LOCALLY
 
 > Here, we will update the README.md on our local repository and then push the new version to remote repo
 
@@ -25,27 +32,26 @@
 -   git commit -m "new update in README.md to be formatted as .md file"               <===  Capture a snapshot of the project's currently staged changes  (locally)
 -   git push          	          <===  Push local code to the master branch of remote repository defined with origin (sent to Github) 
 
-### Screenshots
 ![Example screenshot](./img/sample_update1.png)
 
-
-## HOW TO MANAGE BRANCHES
+<a id="item-three"></a>
+### HOW TO MANAGE BRANCHES
 
 > Here it's to manage branches: view branches, create and see what's done in a branch
 
-###  CREATE A NEW BRANCH
+##  CREATE A NEW BRANCH
 
 -   git branch develop           <===    Create a new branch pointing on latest commit done on current branch (here master branch) — it didn’t switch to that branch
 
 
-###  SHOW WHERE BRANCH POINTERS ARE POINTING
+##  SHOW WHERE BRANCH POINTERS ARE POINTING
 
 -     git log --oneline --decorate
 
 ![Example screenshot](./img/sample_git_log_decorate.png)
 
 
-###   TO REMOVE A BRANCH
+##   TO REMOVE A BRANCH
 
 > In case you need to remove a branch (locally and remotly)
 
@@ -53,7 +59,7 @@
 -   git push origin --delete develop    <===   Delete branch delete branch remotely
 
 
-###   LET'S CREATE A NEW BRANCH BASED ON MASTER AND UPDATE PROJECT INTO THIS NEW BRANCH
+##   LET'S CREATE A NEW BRANCH BASED ON MASTER AND UPDATE PROJECT INTO THIS NEW BRANCH
 
 > Here we will switch the develop branch to update project.
 
@@ -88,7 +94,7 @@
 ![Example screenshot](./img/sample_git_dev_branch.png)
 
 
-
+<a id="item-four"></a>
 ###   MERGE ALL DEV DONE IN DEVELOP BRANCH TO MASTER BRANCH
 
 ##   FIRST CHECK DIFFERENCES
