@@ -1,6 +1,6 @@
 # gittraining
 
-> This is a step by step list of git command to create and to update repository based on several cases.
+> This is a step by step list of git commands to create and to update repository based on several cases.
 
 
 ## TO CREATE A NEW REPOSITORY ON THE COMMAND LINE
@@ -27,3 +27,19 @@
 
 ### Screenshots
 ![Example screenshot](./img/sample_update1.png)
+
+
+## HOW TO MANAGE BRANCHES
+
+> Here it's to manage branches: view branches, create and see what's done in a branch
+
+###  CREATE A NEW BRANCH
+
+-   git branch develop           <===    Create a new branch pointing on latest commit done on current branch (here master branch) — it didn’t switch to that branch
+
+
+###  SHOW WHERE BRANCH POINTERS ARE POINTING
+
+-     git log --oneline --decorate
+
+![Example screenshot](./img/sample_git_log_decorate.png)
