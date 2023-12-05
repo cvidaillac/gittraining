@@ -86,3 +86,26 @@
 -    git push --set-upstream origin develop           <===    Push the current branch and set the remote as upstream
 
 ![Example screenshot](./img/sample_git_dev_branch.png)
+
+
+
+###   MERGE ALL DEV DONE IN DEVELOP BRANCH TO MASTER BRANCH
+
+##   FIRST CHECK DIFFERENCES
+
+>  Here we will check differences between 2 branches
+
+-    git log main..develop         <===   Compare main branch with develop branch
+
+![Example screenshot](./img/sample_git_dif_main_develop_branches.png)
+
+In above example, we have 3 commits ahead in develop branch from main branch. That can be seen in more details with following "git log" command as well:
+
+
+-    git log --oneline --decorate
+
+![Example screenshot](./img/sample_git_dif_main_develop_branches_v2.png)
+
+
+## GO TO MERGE ALL DEV DONE IN DEVELOP BRANCH TO MASTER BRANCH
+
