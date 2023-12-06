@@ -1,8 +1,16 @@
 # gittraining
 
 > This is a step by step list of git commands to create and to update repository based on several cases.
+> As a sample, I'm updating this README.md file and adding screenshot files in it to manage different versions and updates.
 
-
+**Table of content:**
+ - [TO CREATE A NEW REPOSITORY ON THE COMMAND LINE](#item-one)
+ - [TO UPDATE YOUR REPOSITORY WITH NEW VERSION OF README.md FILE UPDATED LOCALLY](#item-two)
+ - [HOW TO MANAGE BRANCHES](#item-three)
+ - [MERGE ALL DEV DONE IN DEVELOP BRANCH TO MASTER BRANCH](#item-four)
+ 
+ 
+<a id="item-one"></a>
 ## TO CREATE A NEW REPOSITORY ON THE COMMAND LINE
 
 > List of git commands to create a new repository from your git terminal:
@@ -15,8 +23,8 @@
 -   git remote add origin git@github.com:cvidaillac/gittraining.git          <===  Add a new remote repository defined with origin (locally)
 -   git push -u origin main         	     <===  Push local code to the master branch of remote repository defined with origin (sent to Github)
   
-  
-## TO UPDATE YOUR REPOSITORY WITH NEW VERSION OF README.md file updated locally
+<a id="item-two"></a>  
+## TO UPDATE YOUR REPOSITORY WITH NEW VERSION OF README.md FILE UPDATED LOCALLY
 
 > Here, we will update the README.md on our local repository and then push the new version to remote repo
 
@@ -25,10 +33,9 @@
 -   git commit -m "new update in README.md to be formatted as .md file"               <===  Capture a snapshot of the project's currently staged changes  (locally)
 -   git push          	          <===  Push local code to the master branch of remote repository defined with origin (sent to Github) 
 
-### Screenshots
 ![Example screenshot](./img/sample_update1.png)
 
-
+<a id="item-three"></a>
 ## HOW TO MANAGE BRANCHES
 
 > Here it's to manage branches: view branches, create and see what's done in a branch
@@ -57,7 +64,7 @@
 
 > Here we will switch the develop branch to update project.
 
-##   SWITCH TO DEVELOP BRANCH
+###   SWITCH TO DEVELOP BRANCH
 
 > As we deleted the develop branch, we need to create again with following command.
 -   git branch develop            <===   Switch to develop branch
@@ -66,7 +73,7 @@
 
 -   git checkout develop
 
-## Validate which branch I'm working on
+### Validate which branch I'm working on
 
 -   git log --oneline --decorate
 
@@ -77,7 +84,7 @@
 ![Example screenshot](./img/sample_git_active_branch.png)
 
 
-##   UPDATE README.md FILE AND PUSH TO DEVELOP BRANCH
+###   UPDATE README.md FILE AND PUSH TO DEVELOP BRANCH
 
 -    git add -A         <===   Add ALL changes done in the working directory to the staging area  (locally)
 
@@ -88,7 +95,7 @@
 ![Example screenshot](./img/sample_git_dev_branch.png)
 
 
-
+<a id="item-four"></a>
 ###   MERGE ALL DEV DONE IN DEVELOP BRANCH TO MASTER BRANCH
 
 ##   FIRST CHECK DIFFERENCES
