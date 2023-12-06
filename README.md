@@ -1,6 +1,7 @@
 # gittraining
 
 > This is a step by step list of git commands to create and to update repository based on several cases.
+> As a sample, I'm updating this README.md file and adding screenshot files in it to manage different versions and updates.
 
 **Table of content:**
  - [TO CREATE A NEW REPOSITORY ON THE COMMAND LINE](#item-one)
@@ -10,7 +11,7 @@
  
  
 <a id="item-one"></a>
-### TO CREATE A NEW REPOSITORY ON THE COMMAND LINE
+## TO CREATE A NEW REPOSITORY ON THE COMMAND LINE
 
 > List of git commands to create a new repository from your git terminal:
 
@@ -23,7 +24,7 @@
 -   git push -u origin main         	     <===  Push local code to the master branch of remote repository defined with origin (sent to Github)
   
 <a id="item-two"></a>  
-### TO UPDATE YOUR REPOSITORY WITH NEW VERSION OF README.md FILE UPDATED LOCALLY
+## TO UPDATE YOUR REPOSITORY WITH NEW VERSION OF README.md FILE UPDATED LOCALLY
 
 > Here, we will update the README.md on our local repository and then push the new version to remote repo
 
@@ -35,23 +36,23 @@
 ![Example screenshot](./img/sample_update1.png)
 
 <a id="item-three"></a>
-### HOW TO MANAGE BRANCHES
+## HOW TO MANAGE BRANCHES
 
 > Here it's to manage branches: view branches, create and see what's done in a branch
 
-##  CREATE A NEW BRANCH
+###  CREATE A NEW BRANCH
 
 -   git branch develop           <===    Create a new branch pointing on latest commit done on current branch (here master branch) — it didn’t switch to that branch
 
 
-##  SHOW WHERE BRANCH POINTERS ARE POINTING
+###  SHOW WHERE BRANCH POINTERS ARE POINTING
 
 -     git log --oneline --decorate
 
 ![Example screenshot](./img/sample_git_log_decorate.png)
 
 
-##   TO REMOVE A BRANCH
+###   TO REMOVE A BRANCH
 
 > In case you need to remove a branch (locally and remotly)
 
@@ -59,11 +60,11 @@
 -   git push origin --delete develop    <===   Delete branch delete branch remotely
 
 
-##   LET'S CREATE A NEW BRANCH BASED ON MASTER AND UPDATE PROJECT INTO THIS NEW BRANCH
+###   LET'S CREATE A NEW BRANCH BASED ON MASTER AND UPDATE PROJECT INTO THIS NEW BRANCH
 
 > Here we will switch the develop branch to update project.
 
-##   SWITCH TO DEVELOP BRANCH
+###   SWITCH TO DEVELOP BRANCH
 
 > As we deleted the develop branch, we need to create again with following command.
 -   git branch develop            <===   Switch to develop branch
@@ -72,7 +73,7 @@
 
 -   git checkout develop
 
-## Validate which branch I'm working on
+### Validate which branch I'm working on
 
 -   git log --oneline --decorate
 
@@ -83,7 +84,7 @@
 ![Example screenshot](./img/sample_git_active_branch.png)
 
 
-##   UPDATE README.md FILE AND PUSH TO DEVELOP BRANCH
+###   UPDATE README.md FILE AND PUSH TO DEVELOP BRANCH
 
 -    git add -A         <===   Add ALL changes done in the working directory to the staging area  (locally)
 
